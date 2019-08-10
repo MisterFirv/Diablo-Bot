@@ -5,7 +5,7 @@ const { prefix, botToken, botChannelID, clientId, clientSecret } = require('./co
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-let channel, accesstoken = 'EUMaHKLFoO2SOGOyQ15yLycuC4LkxYOhh';
+let channel, accesstoken;
 let updateTimer;
 
 let oauthExpiry;
@@ -326,7 +326,7 @@ const updateCharacter = async c => {
 		}
 		// Check if someone has beaten their previous highest rift
 		if (riftCompleted != c.highestSoloRiftCompleted) {
-			channel.send(`${c.battleTag} has reached a new rift at ${riftCompleted} with ${c.character_name}`);
+			channel.send(`${c.battleTag} has reached a new rift at ${riftCompleted} with ${c.character_name}, previous rift was ${c.highestSoloRiftCompleted}`);
 			// set the needsUpdating variable so we update the character
 			needsUpdating = true;
 		}
