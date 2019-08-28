@@ -1,8 +1,8 @@
 {
 	"prefix": "!",
-	"botToken": "NTg5NDQ2MDcxODUyMzM1MTE0.XQTzAw.QVZ_jmBv9O29YnTv5VT5CWpNJhc",
+	"botToken": "",
 	"botChannelID": "598522635017781282",
-	"clientId": "73503002444d471595244d3f9d1b82ee",
-	"clientSecret": "hO7mDw5J6SsyxVBzYNbtm5bkyFI8dADJ",
+	"clientId": "",
+	"clientSecret": "",
 	"blizard-api": "https://EU.api.blizzard.com/d3/profile/"
 }
